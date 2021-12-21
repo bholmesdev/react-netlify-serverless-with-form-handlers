@@ -1,0 +1,46 @@
+.form,
+.label,
+.input,
+.button {
+  border-radius: 0.125rem;
+}
+
+.form {
+  border: 1px solid #444;
+  margin: 1rem auto 0;
+  padding: 1rem;
+}
+
+.label,
+.input,
+.button {
+  color: var(--text);
+  display: block;
+  font-size: 1rem;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  border: 1px solid var(--text);
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+}
+
+.input {
+  width: 100%;
+}
+
+.button {
+  background: var(--primary);
+  border: none;
+  color: var(--background);
+  font-weight: 700;
+  padding: 0.25rem 1.5rem;
+}
+
+.button:active {
+  background: var(--primary-dark);
+}
