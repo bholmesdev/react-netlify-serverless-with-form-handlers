@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../Users/benholmes/Sandbox/ts-serverless-egghead-jlengstorf/netlify/functions/hello-world.ts"],
-  "sourceRoot": "/var/folders/8h/hpgv708x61l1drd20sbmz2nh0000gn/T/tmp-34099-79EFO66zO1Gv",
-  "sourcesContent": ["import { Handler } from '@netlify/functions'\n\nexport const handler: Handler = async () => {\n  return {\n    statusCode: 200,\n    body: 'hello ts!'\n  }\n}"],
-  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAEO,IAAM,UAAmB,YAAY;AAC1C,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM;AAAA;AAAA;",
-  "names": []
-}
