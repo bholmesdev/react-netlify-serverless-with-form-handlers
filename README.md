@@ -10,7 +10,7 @@
 
 Source code from [Jason Lengstorf's eggheadio course](https://egghead.io/courses/create-a-typescript-powered-serverless-react-application-cf0acfbf) on Netlify serverless with TS + React.
 
-### 🧑‍💻 [Try it out!](react-netlify-serverless.netlify.app)
+### 🧑‍💻 [Try it out!](https://form-validation-demo.netlify.app)
 
 ## Install
 
