@@ -37,7 +37,7 @@ export default function Form() {
         </label>
         <input required name="favoriteHexCode" id="favoriteHexCode" className={styles.input} type="text" />
         <p>{response?.invalidFields?.favoriteHexCode ? response.invalidFields.favoriteHexCode : null}</p>
-        <button className={styles.button}>Send away!</button>
+        <button type="submit" className={styles.button}>Send away!</button>
       </form>
       {response?.message ? <p>{response.message}</p> : null}
     </>
