@@ -1,5 +1,7 @@
-import { describe, expect, it } from 'vitest'
 import { handler } from '../../netlify/functions/submit'
+// note: you can make these globally available from vite.config.js
+// see the Vitest docs for more: https://vitest.dev/config/#globals
+import { describe, expect, it } from 'vitest'
 
 function toRequestFromBody(body) {
   return { body: JSON.stringify(body) }
