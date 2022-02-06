@@ -18,7 +18,7 @@ Source code from [Jason Lengstorf's eggheadio course](https://egghead.io/courses
 npm install
 ```
 
-## Usage
+## Serve locally
 
 You'll need a copy of Netlify's CLI to run this project locally. I'd suggest installing this as a global dependency, and starting the dev server like so:
 
@@ -28,6 +28,32 @@ ntl dev
 ```
 
 You should see the project at http://localhost:8888 🚀
+
+## Run the test suites
+
+You'll find 2 ways to run our test suites: [Jest](https://jestjs.io/) and [Vitest](https://vitest.dev/). I used this to compare each framework's up-front configuration costs, speed, and dev ergonomics. You'll find the same set of unit + integration tests written for each under:
+
+```sh
+tests/
+  jest/ ...
+  vitest/ ...
+```
+
+To see them in action, try running some of the following:
+
+```sh
+# Run jest in "watch" mode
+npm run test:jest
+
+# Run Vitest in "watch" mode
+npm run test:vitest
+
+# Run jest normally
+npx jest
+
+# Run Vitest normally
+npx vitest run
+```
 
 ## Author
 
