@@ -1,7 +1,7 @@
 import styles from './Form.module.css';
 import React, { useState, useRef } from 'react';
 import type { Response } from '../../netlify/functions/submit';
-import Nested from './Nested';
+import SubmitButton from './SubmitButton';
 
 export default function Form() {
 	const [response, setResponse] = useState<Response | undefined>();
@@ -26,7 +26,6 @@ export default function Form() {
 
 	return (
 		<>
-			<Nested />
 			<form ref={formRef} onSubmit={onSubmit} className={styles.form}>
 				<label htmlFor="name" className={styles.label}>
 					Name
@@ -46,9 +45,7 @@ export default function Form() {
 				<p>
 					{response?.invalidFields?.favoriteHexCode ? response.invalidFields.favoriteHexCode : null}
 				</p>
-				<button type="submit" className={styles.button}>
-					Send away!
-				</button>
+				<SubmitButton />
 			</form>
 			{response?.message ? <p>{response.message}</p> : null}
 		</>
