@@ -18,8 +18,10 @@ export default function Form() {
 			method: 'POST',
 			body: JSON.stringify(entries),
 		});
-		if (res?.status !== 200) return;
-		formRef.current.reset();
+		if (!res) return;
+		if (res.status === 200) {
+			formRef.current.reset();
+		}
 		const body = await res.json();
 		setResponse(body);
 	}
